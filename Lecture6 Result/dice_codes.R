@@ -20,3 +20,27 @@ plot(dicefunction(10000))
 hist(dicefunction(10))
 hist(dicefunction(100))
 hist(dicefunction(10000))
+
+#Drawing CDF
+plot(ecdf(dicefunction(10)))
+plot(ecdf(dicefunction(100)))
+plot(ecdf(dicefunction(10000)))
+
+#Drwing Normal Distribution
+plot(rnorm(10000))
+hist(rnorm(10000),prob=T)
+
+#Finding z scores
+zscore=dnorm(70.472,mean=70,sd=5)
+zscore
+#simply
+zscore1=(70.472-70)/5
+zscore1
+quantile=pnorm(70.472,mean=70,sd=5)
+quantile*100
+
+#Normal pdf
+#X~N(3,5),Pr(X>1)
+1-pnorm(1,mean=3,sd=sqrt(5))
+
+
