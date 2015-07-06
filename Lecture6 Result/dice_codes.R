@@ -11,7 +11,7 @@ dicefunction=function(r){
     #discare the initial value
     C[-1]
 }
-#plottings
+#plotting the function
 plot(dicefunction(10))
 plot(dicefunction(100))
 plot(dicefunction(10000))
