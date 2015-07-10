@@ -50,3 +50,9 @@ cor.test(hr,mp)
 reg4=lm(mp~hr)   
 summary(reg4)
 abline(reg4)
+reg4$coeff
+
+reg5=lm(mp[-20]~hr[-20])
+summary(reg5)
+plot(hr[-20],mp[-20])
+abline(reg5)
